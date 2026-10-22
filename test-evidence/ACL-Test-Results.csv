@@ -1,0 +1,11 @@
+Test ID,Operation,User/Role,Record Branch,Expected Result,Actual Result,Pass/Fail,Evidence Filename,Notes
+R1,Read,admin,EEE,Allowed,Pending,Pending,,
+R2,Read,bb1,EEE,Allowed per intended design,Pending,Pending,,
+R3,Read,no admin/bb1,EEE,Denied per intended design,Pending,Pending,,
+R4,Read,bb1,Non-EEE,Verify branch restriction,Pending,Pending,,
+C1,Create,bb2,N/A,Allowed per intended design,Pending,Pending,,
+C2,Create,no bb2,N/A,Denied per intended design,Pending,Pending,,
+W1,Write,bb3,N/A,Allowed per intended design,Pending,Pending,,
+W2,Write,no bb3,N/A,Denied per intended design,Pending,Pending,,
+D1,Delete,bb4,N/A,Allowed per intended design,Pending,Pending,,
+D2,Delete,no bb4,N/A,Denied per intended design,Pending,Pending,,
